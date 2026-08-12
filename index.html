@@ -1,13 +1,19 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Michael Ngigi | Software Developer</title>
-    <meta
-      name="description"
-      content="Portfolio for Michael Ngigi, a software developer intern and Computer Science diploma candidate at Zetech University."
-    />
+    <title>Michael Ngigi | Full-stack Software Developer</title>
+    <meta name="description" content="Michael Ngigi is a full-stack software developer building production-ready web systems, APIs, and database-backed applications." />
+    <meta name="theme-color" content="#faf8f4" />
+    <meta property="og:title" content="Michael Ngigi | Full-stack Software Developer" />
+    <meta property="og:description" content="Senior developer portfolio showcasing experience in web systems, API engineering, and modern full-stack development." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/profile-photo.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Michael Ngigi | Full-stack Software Developer" />
+    <meta name="twitter:description" content="Senior developer portfolio showcasing experience in web systems, API engineering, and modern full-stack development." />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -15,248 +21,308 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Michael Ngigi portfolio home">MN<span>.</span></a>
+      <a class="brand" href="#top">MN<span>.</span></a>
 
-      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
         <span></span>
         <span></span>
       </button>
 
-      <nav class="site-nav" aria-label="Main navigation">
-        <a href="#top" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#top" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </nav>
 
-      <a class="nav-cta" href="mailto:ngigimichael76@gmail.com">Let's Talk <span aria-hidden="true">&rarr;</span></a>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-pressed="false">Dark</button>
+        <a class="nav-cta" href="mailto:ngigimichael76@gmail.com">Contact</a>
+      </div>
     </header>
 
     <main id="top">
-      <section class="hero">
+      <section class="hero section reveal" id="top">
         <div class="hero-copy">
-          <p class="eyebrow">Hello, I'm</p>
+          <p class="eyebrow">Full-stack software engineering</p>
           <h1>Michael <span>Ngigi</span></h1>
           <p class="hero-role">Full-stack Software Developer</p>
           <p class="hero-text">
-            I deliver modern web and software solutions that combine reliable backend systems,
-            elegant interfaces, and data-driven workflows for business-ready applications.
+            I build reliable web platforms, API-driven workflows, and database-backed systems for teams that need production-ready software.
           </p>
+
           <div class="hero-actions">
-            <a class="button primary" href="#projects">View My Work <span aria-hidden="true">&rarr;</span></a>
-            <a class="button secondary" href="mailto:ngigimichael76@gmail.com">Email Me</a>
+            <a class="button primary" href="#projects">View Projects</a>
+            <a class="button secondary" href="#contact">Contact Me</a>
           </div>
-          <div class="social-links" aria-label="Social links">
-            <a href="https://github.com/Mike775-m/" target="_blank" rel="noreferrer">GH</a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">in</a>
-            <a href="mailto:ngigimichael76@gmail.com">@</a>
-            <a href="tel:+254715883594">+254 715 883 594</a>
-            <a href="https://wa.me/254715883594" target="_blank" rel="noreferrer">WA</a>
-          </div>
+
+          <ul class="hero-details" aria-label="Contact information">
+            <li>WhatsApp <a href="https://wa.me/254715883594">+254 715 883 594</a></li>
+            <li>Email <a href="mailto:ngigimichael76@gmail.com">ngigimichael76@gmail.com</a></li>
+            <li>GitHub <a href="https://github.com/Mike775-m/" target="_blank" rel="noreferrer">Mike775-m</a></li>
+          </ul>
         </div>
 
-        <div class="hero-visual" aria-label="Michael Ngigi profile">
-          <div class="portrait-glow"></div>
+        <div class="hero-visual">
           <figure class="profile-frame">
-            <img
-              src="assets/profile-photo.jpg"
-              alt="Michael Ngigi smiling outdoors at sunset"
-            />
+            <img src="assets/profile-photo.jpg" alt="Portrait of Michael Ngigi" loading="lazy" />
           </figure>
         </div>
       </section>
 
-      <section class="section about-section" id="about">
-        <div class="about-copy">
-          <p class="eyebrow">About Me</p>
-          <h2>Delivering polished digital products with practical design and dependable engineering.</h2>
-          <p>
-            I am a results-oriented software developer intern completing a Diploma in Computer Science
-            at Zetech University. I build customer-facing systems, database-backed applications, and
-            workflow platforms that help teams move from requirements to production with confidence.
-          </p>
-          <p>
-            For project inquiries, call or WhatsApp <a href="tel:+254715883594">+254 715 883 594</a>.
-          </p>
-          <a class="button secondary" href="#contact">Know More About Me <span aria-hidden="true">&rarr;</span></a>
+      <section class="section about-section reveal" id="about">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">About</p>
+            <h2>Practical software engineering for real product outcomes.</h2>
+          </div>
         </div>
 
-        <div class="stats-grid" aria-label="Portfolio highlights">
-      
-          <article>
-            <span class="stat-icon">02</span>
-            <strong>3+</strong>
-            <p>Projects Completed</p>
+        <div class="about-grid">
+          <div class="about-content">
+            <p>
+              I’m completing a Diploma in Computer Science at Zetech University and building full-stack systems that support workflows, customer experiences, and operational efficiency.
+            </p>
+            <p>
+              My focus is on practical architecture, maintainable code, and clean interfaces. I bring a software engineering mindset to every project, from planning through deployment and optimization.
+            </p>
+            <p>
+              For project inquiries, call or WhatsApp <a href="https://wa.me/254715883594">+254 715 883 594</a>.
+            </p>
+          </div>
+
+          <div class="about-highlights">
+            <div class="stat-card">
+              <span>3+</span>
+              <p>Project implementations</p>
+            </div>
+            <div class="stat-card">
+              <span>8+</span>
+              <p>Core technologies</p>
+            </div>
+            <div class="stat-card">
+              <span>2</span>
+              <p>Languages (English, Swahili)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section skills-section reveal" id="skills">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Skills</p>
+            <h2>Technical areas where I deliver value.</h2>
+          </div>
+        </div>
+
+        <div class="skill-grid">
+          <article class="skill-card">
+            <h3>Frontend</h3>
+            <ul>
+              <li>React / Next.js</li>
+              <li>TypeScript</li>
+              <li>HTML & CSS</li>
+              <li>Tailwind CSS</li>
+            </ul>
           </article>
-          <article>
-            <span class="stat-icon">03</span>
-            <strong>8+</strong>
-            <p>Technologies Used</p>
+          <article class="skill-card">
+            <h3>Backend</h3>
+            <ul>
+              <li>Python / Django</li>
+              <li>PHP</li>
+              <li>Node.js</li>
+              <li>API design</li>
+            </ul>
           </article>
-          <article>
-            <span class="stat-icon">04</span>
-            <strong>2</strong>
-            <p>Languages Spoken</p>
+          <article class="skill-card">
+            <h3>Databases</h3>
+            <ul>
+              <li>PostgreSQL</li>
+              <li>MySQL</li>
+              <li>Supabase</li>
+              <li>Database modeling</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Tools</h3>
+            <ul>
+              <li>Git</li>
+              <li>REST APIs</li>
+              <li>Deployment</li>
+              <li>Testing</li>
+            </ul>
           </article>
         </div>
       </section>
 
-      <section class="section" id="projects">
+      <section class="section projects-section reveal" id="projects">
         <div class="section-heading">
           <div>
             <p class="eyebrow">Projects</p>
-            <h2>Some things I've built.</h2>
+            <h2>Selected work with business value.</h2>
           </div>
-          <a href="https://github.com/GitHub/" target="_blank" rel="noreferrer">View GitHub <span aria-hidden="true">&rarr;</span></a>
+          <a href="https://github.com/Mike775-m/" target="_blank" rel="noreferrer">GitHub profile</a>
         </div>
 
         <div class="project-grid">
-          <article class="project-card">
-            <div class="project-image analytics"></div>
+          <article class="project-card reveal">
+            <div class="project-image safaris"></div>
             <div class="project-content">
               <p class="project-type">PHP · WooCommerce · MySQL</p>
               <h3>Safaris Project</h3>
               <p>
-                E-commerce booking platform for safari packages with inventory management,
-                customer checkout flows, and custom WooCommerce integrations.
+                Built a travel booking system that handles package management, checkout flows, and customer interactions through a WooCommerce-based storefront.
               </p>
-              <ul class="tag-list">
-                <li>PHP</li>
-                <li>MySQL</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>WooCommerce</li>
+              <ul class="project-list">
+                <li>Custom booking logic and inventory workflows</li>
+                <li>Buyer checkout and reservation validation</li>
+                <li>Backend data model optimized for MySQL</li>
               </ul>
             </div>
           </article>
 
-          <article class="project-card">
-            <div class="project-image commerce"></div>
+          <article class="project-card reveal">
+            <div class="project-image bizflow"></div>
             <div class="project-content">
               <p class="project-type">Next.js · React · TypeScript</p>
               <h3>BizFlow AI Suite</h3>
               <p>
-                AI-driven workflow suite built with modern front-end tooling, Supabase data services,
-                and PostgreSQL for real-time business automation.
+                Developed a workflow suite with modern UI, real-time data sync, and Supabase-backed services for business automation.
               </p>
-              <ul class="tag-list">
-                <li>Next.js</li>
-                <li>React</li>
-                <li>TypeScript</li>
-                <li>Tailwind CSS</li>
-                <li>Supabase</li>
-                <li>PostgreSQL</li>
+              <ul class="project-list">
+                <li>Front-end delivered with Next.js and Tailwind CSS</li>
+                <li>Supabase authentication and PostgreSQL storage</li>
+                <li>Reusable components for business workflows</li>
               </ul>
             </div>
           </article>
 
-          <article class="project-card">
-            <div class="project-image editorial"></div>
+          <article class="project-card reveal">
+            <div class="project-image task-manager"></div>
             <div class="project-content">
               <p class="project-type">Python · Django</p>
               <h3>Task Manager</h3>
               <p>
-                Web-based task and team manager with authenticated workflows, project tracking,
-                notifications, and management dashboards.
+                Delivered a task and team manager focused on authenticated workflows, project visibility, and dashboard reporting.
               </p>
-              <ul class="tag-list">
-                <li>Python</li>
-                <li>Django</li>
-                <li>PostgreSQL</li>
+              <ul class="project-list">
+                <li>Authenticated task tracking and role management</li>
+                <li>Dashboard summaries for team activity</li>
+                <li>Backend built with Django and PostgreSQL</li>
               </ul>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="section" id="skills">
-        <p class="eyebrow">Skills</p>
-        <h2>Technologies I work with.</h2>
-
-        <div class="skills-grid">
-          <article><span>PY</span><p>Python</p></article>
-          <article><span>JV</span><p>Java</p></article>
-          <article><span>TS</span><p>TypeScript</p></article>
-          <article><span>PHP</span><p>PHP</p></article>
-          <article><span>JS</span><p>JavaScript</p></article>
-          <article><span>ND</span><p>Node.js</p></article>
-          <article><span>RE</span><p>React</p></article>
-          <article><span>SQL</span><p>MySQL</p></article>
-          <article><span>GIT</span><p>Git</p></article>
-        </div>
-      </section>
-
-      <section class="section education-section" id="education">
-        <div>
-          <p class="eyebrow">Education</p>
-          <h2>Computer Science foundation.</h2>
+      <section class="section experience-section reveal" id="experience">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Experience</p>
+            <h2>Software development experience through academic and independent delivery.</h2>
+          </div>
         </div>
 
         <div class="timeline">
           <article>
-            <span>present 2024</span>
+            <span>2024 – present</span>
             <div>
-              <h3> Computer Science</h3>
-              <p>Zetech University, Nairobi, Kenya</p>
-            </div>
-          </article>
-          <article>
-            <span>Coursework</span>
-            <div>
-              <h3>Core software development topics</h3>
-              <p>
-                Data Structures, OOP, Database Systems, Web Development, Software Engineering, and
-                Networking Fundamentals.
+              <h3>Computer Science Diploma Candidate</h3>
+              <p>Zetech University</p>
+              <p class="timeline-copy">
+                Focused on software architecture, database systems, web development, and project delivery while producing disciplined code for application-level systems.
               </p>
             </div>
           </article>
           <article>
-            <span>Languages</span>
+            <span>Project practice</span>
             <div>
-              <h3>English and Swahili</h3>
-              <p>English: professional proficiency. Swahili: native proficiency.</p>
+              <h3>Independent software delivery</h3>
+              <p>Freelance and personal development</p>
+              <p class="timeline-copy">
+                Designed and implemented full-stack projects in PHP, Django, Next.js, and database technologies to solve real operational challenges.
+              </p>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="cta-band" id="contact">
-        <div class="cta-icon" aria-hidden="true">&nearr;</div>
-        <h2>Let's build something amazing together.</h2>
-        <a class="button primary" href="mailto:ngigimichael76@gmail.com">Let's Talk <span aria-hidden="true">&rarr;</span></a>
+      <section class="section services-section reveal" id="services">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Expertise</p>
+            <h2>Services I provide.</h2>
+          </div>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <h3>Full-stack development</h3>
+            <p>End-to-end web applications with scalable front-end and backend delivery.</p>
+          </article>
+          <article class="service-card">
+            <h3>Backend & APIs</h3>
+            <p>RESTful service design, integration, authentication, and data orchestration.</p>
+          </article>
+          <article class="service-card">
+            <h3>Database & deployment</h3>
+            <p>Data modeling, PostgreSQL/MySQL implementation, and production-ready deployments.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-section reveal" id="contact">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Ready to connect on your next project.</h2>
+          </div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Email</h3>
+            <a href="mailto:ngigimichael76@gmail.com">ngigimichael76@gmail.com</a>
+          </div>
+          <div class="contact-card">
+            <h3>Phone</h3>
+            <a href="tel:+254715883594">+254 715 883 594</a>
+            <a href="https://wa.me/254715883594" target="_blank" rel="noreferrer">WhatsApp</a>
+          </div>
+          <div class="contact-card">
+            <h3>GitHub</h3>
+            <a href="https://github.com/Mike775-m/" target="_blank" rel="noreferrer">Mike775-m</a>
+          </div>
+          <div class="contact-card">
+            <h3>LinkedIn</h3>
+            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn profile</a>
+          </div>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div>
         <a class="brand footer-brand" href="#top">MN<span>.</span></a>
-        <p>&copy; 2026 Michael Ngigi. All rights reserved.</p>
+        <p>Production-ready portfolio built with clean HTML, CSS, and JavaScript.</p>
       </div>
 
-      <div>
-        <h3>Navigation</h3>
+      <div class="footer-links">
         <a href="#top">Home</a>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
       </div>
 
-      <div>
-        <h3>Connect</h3>
+      <div class="footer-links">
+        <a href="https://github.com/Mike775-m/" target="_blank" rel="noreferrer">GitHub</a>
         <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a href="https://github.com/GitHub/" target="_blank" rel="noreferrer">GitHub</a>
         <a href="mailto:ngigimichael76@gmail.com">Email</a>
-      </div>
-
-      <div>
-        <h3>Let's Connect</h3>
-        <p>Open to software developer internships and collaborative projects.</p>
-        <a href="mailto:ngigimichael76@gmail.com">ngigimichael76@gmail.com</a>
-        <a href="tel:+254715883594">+254 715 883 594</a>
-        <a href="https://wa.me/254715883594" target="_blank" rel="noreferrer">WhatsApp</a>
       </div>
     </footer>
 
